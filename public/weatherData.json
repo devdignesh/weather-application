@@ -1,0 +1,432 @@
+[
+  {
+    "city": "London",
+    "country": "UK",
+    "today": {
+      "day": "Monday",
+      "current": 16,
+      "condition": "Rain",
+      "icon": "rain",
+      "high_temp": 18,
+      "low_temp": 14,
+      "humidity": 85,
+      "pressure": 1008,
+      "real_feel": 15
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "current": 17,
+      "condition": "Cloudy",
+      "icon": "sun_clouds",
+      "high_temp": 19,
+      "low_temp": 13,
+      "humidity": 78,
+      "pressure": 1010,
+      "real_feel": 16
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 18,
+        "icon": "rain"
+      },
+      {
+        "day": "Thursday",
+        "temp": 17,
+        "icon": "sun_clouds"
+      },
+      {
+        "day": "Friday",
+        "temp": 20,
+        "icon": "sun_rain"
+      }
+    ]
+  },
+  {
+    "city": "Tokyo",
+    "country": "Japan",
+    "today": {
+      "day": "Monday",
+      "current": 24,
+      "condition": "Sunny",
+      "icon": "sun_rain",
+      "high_temp": 27,
+      "low_temp": 22,
+      "humidity": 65,
+      "pressure": 1018,
+      "real_feel": 26
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "current": 25,
+      "condition": "Cloudy",
+      "icon": "sun_clouds",
+      "high_temp": 26,
+      "low_temp": 21,
+      "humidity": 70,
+      "pressure": 1020,
+      "real_feel": 24
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 24,
+        "icon": "thunder"
+      },
+      {
+        "day": "Thursday",
+        "temp": 22,
+        "icon": "rain"
+      },
+      {
+        "day": "Friday",
+        "temp": 23,
+        "icon": "sun_rain"
+      }
+    ]
+  },
+  {
+    "city": "Sydney",
+    "country": "Australia",
+    "today": {
+      "day": "Monday",
+      "current": 26,
+      "condition": "Sunny",
+      "icon": "sun_rain",
+      "high_temp": 29,
+      "low_temp": 24,
+      "humidity": 58,
+      "pressure": 1022,
+      "real_feel": 28
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "current": 28,
+      "condition": "Partly Cloudy",
+      "icon": "sun_clouds",
+      "high_temp": 30,
+      "low_temp": 25,
+      "humidity": 60,
+      "pressure": 1024,
+      "real_feel": 27
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 27,
+        "icon": "sun_rain"
+      },
+      {
+        "day": "Thursday",
+        "temp": 25,
+        "icon": "rain"
+      },
+      {
+        "day": "Friday",
+        "temp": 26,
+        "icon": "thunder"
+      }
+    ]
+  },
+  {
+    "city": "paris",
+    "country": "France",
+    "today": {
+      "day": "Monday",
+      "current": 19,
+      "condition": "Cloudy",
+      "icon": "sun_clouds",
+      "high_temp": 21,
+      "low_temp": 16,
+      "humidity": 75,
+      "pressure": 1016,
+      "real_feel": 18
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "current": 20,
+      "condition": "Sunny",
+      "icon": "sun_rain",
+      "high_temp": 22,
+      "low_temp": 17,
+      "humidity": 68,
+      "pressure": 1019,
+      "real_feel": 19
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 21,
+        "icon": "sun_clouds"
+      },
+      {
+        "day": "Thursday",
+        "temp": 20,
+        "icon": "rain"
+      },
+      {
+        "day": "Friday",
+        "temp": 22,
+        "icon": "sun_rain"
+      }
+    ]
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "today": {
+      "day": "Monday",
+      "current": 18,
+      "condition": "Rain",
+      "icon": "rain",
+      "high_temp": 20,
+      "low_temp": 16,
+      "humidity": 80,
+      "pressure": 1005,
+      "real_feel": 17
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "current": 19,
+      "condition": "Cloudy",
+      "icon": "sun_clouds",
+      "high_temp": 21,
+      "low_temp": 15,
+      "humidity": 72,
+      "pressure": 1008,
+      "real_feel": 18
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 20,
+        "icon": "rain"
+      },
+      {
+        "day": "Thursday",
+        "temp": 18,
+        "icon": "thunder"
+      },
+      {
+        "day": "Friday",
+        "temp": 19,
+        "icon": "sun_clouds"
+      }
+    ]
+  },
+  {
+    "city": "Toronto",
+    "country": "Canada",
+    "today": {
+      "day": "Monday",
+      "current": 15,
+      "condition": "Thunderstorms",
+      "icon": "thunder",
+      "high_temp": 18,
+      "low_temp": 12,
+      "humidity": 85,
+      "pressure": 1002,
+      "real_feel": 14
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "current": 16,
+      "condition": "Rain",
+      "icon": "rain",
+      "high_temp": 17,
+      "low_temp": 13,
+      "humidity": 80,
+      "pressure": 1004,
+      "real_feel": 15
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 15,
+        "icon": "thunder"
+      },
+      {
+        "day": "Thursday",
+        "temp": 17,
+        "icon": "sun_rain"
+      },
+      {
+        "day": "Friday",
+        "temp": 18,
+        "icon": "sun_clouds"
+      }
+    ]
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "today": {
+      "day": "Monday",
+      "current": 36,
+      "condition": "Sunny",
+      "icon": "sun_rain",
+      "high_temp": 40,
+      "low_temp": 32,
+      "humidity": 50,
+      "pressure": 1010,
+      "real_feel": 38
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "current": 37,
+      "condition": "Cloudy",
+      "icon": "sun_clouds",
+      "high_temp": 41,
+      "low_temp": 33,
+      "humidity": 55,
+      "pressure": 1013,
+      "real_feel": 39
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 38,
+        "icon": "sun_rain"
+      },
+      {
+        "day": "Thursday",
+        "temp": 39,
+        "icon": "sun_clouds"
+      },
+      {
+        "day": "Friday",
+        "temp": 40,
+        "icon": "thunder"
+      }
+    ]
+  },
+  {
+    "city": "Moscow",
+    "country": "Russia",
+    "today": {
+      "day": "Monday",
+      "current": 10,
+      "condition": "Rain",
+      "icon": "rain",
+      "high_temp": 12,
+      "low_temp": 7,
+      "humidity": 88,
+      "pressure": 1017,
+      "real_feel": 9
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "current": 11,
+      "condition": "Cloudy",
+      "icon": "sun_clouds",
+      "high_temp": 13,
+      "low_temp": 8,
+      "humidity": 80,
+      "pressure": 1019,
+      "real_feel": 10
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 12,
+        "icon": "rain"
+      },
+      {
+        "day": "Thursday",
+        "temp": 10,
+        "icon": "thunder"
+      },
+      {
+        "day": "Friday",
+        "temp": 13,
+        "icon": "sun_rain"
+      }
+    ]
+  },
+  {
+    "city": "Cape Town",
+    "country": "South Africa",
+    "today": {
+      "day": "Monday",
+      "current": 22,
+      "condition": "Sunny",
+      "icon": "sun_rain",
+      "high_temp": 25,
+      "low_temp": 19,
+      "humidity": 68,
+      "pressure": 1012,
+      "real_feel": 23
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "current": 23,
+      "condition": "Cloudy",
+      "icon": "sun_clouds",
+      "high_temp": 26,
+      "low_temp": 20,
+      "humidity": 65,
+      "pressure": 1014,
+      "real_feel": 22
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 22,
+        "icon": "sun_rain"
+      },
+      {
+        "day": "Thursday",
+        "temp": 21,
+        "icon": "rain"
+      },
+      {
+        "day": "Friday",
+        "temp": 23,
+        "icon": "thunder"
+      }
+    ]
+  },
+  {
+    "city": "Mexico City",
+    "country": "Mexico",
+    "today": {
+      "day": "Monday",
+      "current": 20,
+      "condition": "Cloudy",
+      "icon": "sun_clouds",
+      "high_temp": 23,
+      "low_temp": 17,
+      "humidity": 77,
+      "pressure": 1011,
+      "real_feel": 19
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "current": 21,
+      "condition": "Rain",
+      "icon": "rain",
+      "high_temp": 24,
+      "low_temp": 18,
+      "humidity": 80,
+      "pressure": 1013,
+      "real_feel": 20
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 22,
+        "icon": "sun_rain"
+      },
+      {
+        "day": "Thursday",
+        "temp": 23,
+        "icon": "thunder"
+      },
+      {
+        "day": "Friday",
+        "temp": 24,
+        "icon": "sun_clouds"
+      }
+    ]
+  }
+]

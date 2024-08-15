@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Aldrich";
+    font-style: "Medium";
+    font-weight: 400;
+    src: url("./fonts/Aldrich-Regular.ttf") format("truetype");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    font-style: "Medium";
+    font-weight: 500;
+    src: url("./fonts/poppins/Poppins-Medium.ttf") format("truetype");
+  }
+}
+
+
+
+@layer base {
+  @font-face {
+    font-family: "Audiowide";
+    font-style: "Medium";
+    font-weight: 400;
+    src: url("./fonts/Audiowide-Regular.ttf") format("truetype");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    font-style: "Regular";
+    font-weight: 400;
+    src: url("./fonts/Inter-VariableFont.ttf") format("truetype");
+  }
+}
+
+
+ 
