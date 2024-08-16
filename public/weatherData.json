@@ -4,7 +4,7 @@
     "country": "UK",
     "today": {
       "day": "Monday",
-      "current": 16,
+      "temp": 16,
       "condition": "Rain",
       "icon": "rain",
       "high_temp": 18,
@@ -15,7 +15,7 @@
     },
     "tomorrow": {
       "day": "Tuesday",
-      "current": 17,
+      "temp": 17,
       "condition": "Cloudy",
       "icon": "sun_clouds",
       "high_temp": 19,
@@ -47,7 +47,7 @@
     "country": "Japan",
     "today": {
       "day": "Monday",
-      "current": 24,
+      "temp": 24,
       "condition": "Sunny",
       "icon": "sun_rain",
       "high_temp": 27,
@@ -58,7 +58,7 @@
     },
     "tomorrow": {
       "day": "Tuesday",
-      "current": 25,
+      "temp": 25,
       "condition": "Cloudy",
       "icon": "sun_clouds",
       "high_temp": 26,
@@ -90,7 +90,7 @@
     "country": "Australia",
     "today": {
       "day": "Monday",
-      "current": 26,
+      "temp": 26,
       "condition": "Sunny",
       "icon": "sun_rain",
       "high_temp": 29,
@@ -101,7 +101,7 @@
     },
     "tomorrow": {
       "day": "Tuesday",
-      "current": 28,
+      "temp": 28,
       "condition": "Partly Cloudy",
       "icon": "sun_clouds",
       "high_temp": 30,
@@ -133,7 +133,7 @@
     "country": "France",
     "today": {
       "day": "Monday",
-      "current": 19,
+      "temp": 19,
       "condition": "Cloudy",
       "icon": "sun_clouds",
       "high_temp": 21,
@@ -144,7 +144,7 @@
     },
     "tomorrow": {
       "day": "Tuesday",
-      "current": 20,
+      "temp": 20,
       "condition": "Sunny",
       "icon": "sun_rain",
       "high_temp": 22,
@@ -176,7 +176,7 @@
     "country": "Germany",
     "today": {
       "day": "Monday",
-      "current": 18,
+      "temp": 18,
       "condition": "Rain",
       "icon": "rain",
       "high_temp": 20,
@@ -187,7 +187,7 @@
     },
     "tomorrow": {
       "day": "Tuesday",
-      "current": 19,
+      "temp": 19,
       "condition": "Cloudy",
       "icon": "sun_clouds",
       "high_temp": 21,
@@ -219,7 +219,7 @@
     "country": "Canada",
     "today": {
       "day": "Monday",
-      "current": 15,
+      "temp": 15,
       "condition": "Thunderstorms",
       "icon": "thunder",
       "high_temp": 18,
@@ -230,7 +230,7 @@
     },
     "tomorrow": {
       "day": "Tuesday",
-      "current": 16,
+      "temp": 16,
       "condition": "Rain",
       "icon": "rain",
       "high_temp": 17,
@@ -262,7 +262,7 @@
     "country": "UAE",
     "today": {
       "day": "Monday",
-      "current": 36,
+      "temp": 36,
       "condition": "Sunny",
       "icon": "sun_rain",
       "high_temp": 40,
@@ -273,7 +273,7 @@
     },
     "tomorrow": {
       "day": "Tuesday",
-      "current": 37,
+      "temp": 37,
       "condition": "Cloudy",
       "icon": "sun_clouds",
       "high_temp": 41,
@@ -305,7 +305,7 @@
     "country": "Russia",
     "today": {
       "day": "Monday",
-      "current": 10,
+      "temp": 10,
       "condition": "Rain",
       "icon": "rain",
       "high_temp": 12,
@@ -316,7 +316,7 @@
     },
     "tomorrow": {
       "day": "Tuesday",
-      "current": 11,
+      "temp": 11,
       "condition": "Cloudy",
       "icon": "sun_clouds",
       "high_temp": 13,
@@ -348,7 +348,7 @@
     "country": "South Africa",
     "today": {
       "day": "Monday",
-      "current": 22,
+      "temp": 22,
       "condition": "Sunny",
       "icon": "sun_rain",
       "high_temp": 25,
@@ -359,7 +359,7 @@
     },
     "tomorrow": {
       "day": "Tuesday",
-      "current": 23,
+      "temp": 23,
       "condition": "Cloudy",
       "icon": "sun_clouds",
       "high_temp": 26,
@@ -387,11 +387,11 @@
     ]
   },
   {
-    "city": "Mexico City",
+    "city": "Mexico",
     "country": "Mexico",
     "today": {
       "day": "Monday",
-      "current": 20,
+      "temp": 20,
       "condition": "Cloudy",
       "icon": "sun_clouds",
       "high_temp": 23,
@@ -402,7 +402,7 @@
     },
     "tomorrow": {
       "day": "Tuesday",
-      "current": 21,
+      "temp": 21,
       "condition": "Rain",
       "icon": "rain",
       "high_temp": 24,
@@ -428,5 +428,137 @@
         "icon": "sun_clouds"
       }
     ]
+  },
+  {
+    "city": "Bengaluru",
+    "country": "India",
+    "today": {
+      "day": "Monday",
+      "temp": 25,
+      "condition": "Partly Cloudy",
+      "icon": "sun_clouds",
+      "high_temp": 27,
+      "low_temp": 22,
+      "humidity": 65,
+      "pressure": 1010,
+      "real_feel": 26
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "temp": 24,
+      "condition": "Light Rain",
+      "icon": "rain",
+      "high_temp": 26,
+      "low_temp": 21,
+      "humidity": 70,
+      "pressure": 1012,
+      "real_feel": 23
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 23,
+        "icon": "sun_clouds"
+      },
+      {
+        "day": "Thursday",
+        "temp": 24,
+        "icon": "thunder"
+      },
+      {
+        "day": "Friday",
+        "temp": 25,
+        "icon": "rain"
+      }
+    ]
+  },
+  {
+    "city": "Delhi",
+    "country": "India",
+    "today": {
+      "day": "Monday",
+      "temp": 35,
+      "condition": "Sunny",
+      "icon": "sun_rain",
+      "high_temp": 38,
+      "low_temp": 30,
+      "humidity": 40,
+      "pressure": 1005,
+      "real_feel": 37
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "temp": 36,
+      "condition": "Cloudy",
+      "icon": "sun_clouds",
+      "high_temp": 39,
+      "low_temp": 31,
+      "humidity": 45,
+      "pressure": 1006,
+      "real_feel": 38
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 37,
+        "icon": "sun"
+      },
+      {
+        "day": "Thursday",
+        "temp": 36,
+        "icon": "rain"
+      },
+      {
+        "day": "Friday",
+        "temp": 38,
+        "icon": "thunder"
+      }
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "today": {
+      "day": "Monday",
+      "temp": 30,
+      "condition": "Humid",
+      "icon": "sun_rain",
+      "high_temp": 33,
+      "low_temp": 27,
+      "humidity": 85,
+      "pressure": 1012,
+      "real_feel": 32
+    },
+    "tomorrow": {
+      "day": "Tuesday",
+      "temp": 29,
+      "condition": "Rain",
+      "icon": "rain",
+      "high_temp": 32,
+      "low_temp": 26,
+      "humidity": 88,
+      "pressure": 1014,
+      "real_feel": 28
+    },
+    "forecast": [
+      {
+        "day": "Wednesday",
+        "temp": 28,
+        "icon": "rain"
+      },
+      {
+        "day": "Thursday",
+        "temp": 30,
+        "icon": "sun_rain"
+      },
+      {
+        "day": "Friday",
+        "temp": 31,
+        "icon": "thunder"
+      }
+    ]
   }
+  
+  
+  
 ]

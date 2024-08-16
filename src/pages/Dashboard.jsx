@@ -7,11 +7,16 @@ import useSelectedCityStore from "../store/useSelectedCityStore";
 import { fetchCityWeatherData } from "../api/cityWeatherData";
 import DisplayWeather from "../component/DisplayWeather";
 import ForecastWeather from "../component/ForecastWeather";
+import { BarChart } from "@mui/x-charts";
+import { LineChart } from "@mui/x-charts/LineChart";
 
 const Dashboard = () => {
   const selectedCity = useSelectedCityStore((state) => state.selectedCity);
   const [cityWeather, setCityWeather] = useState(null);
   const [selectedTab, setSelectedTab] = useState("Today");
+  const [chartData, setChartData] = useState({ xAxis: [], series: [] });
+
+  console.log("ChartData", chartData.series);
 
   console.log("Dashboard selectedCity", selectedCity);
   console.log("Dashboard selectedTab", selectedTab);
@@ -21,17 +26,34 @@ const Dashboard = () => {
     const fetchCityData = async () => {
       try {
         const data = await fetchCityWeatherData(selectedCity); // Fetch weather data based on selected city
-        console.log("Dashboard data", data); 
+        console.log("Dashboard data", data);
         if (data) {
           setCityWeather(data); // Set city weather data if it exists
+
+          const days = [
+            data.today.day,
+            data.tomorrow.day,
+            ...data.forecast.map((f) => f.day),
+          ];
+          const temps = [
+            data.today.temp,
+            data.tomorrow.temp,
+            ...data.forecast.map((f) => f.temp),
+          ];
+
+          setChartData({
+            xAxis: days,
+            series: temps,
+          });
+          
         } else {
           setCityWeather([]); // If no data, set an empty array
+          setChartData({ xAxis: [], series: [] }); // Reset chart data
         }
-
-    
       } catch (error) {
-        console.error("Error fetching city weather data:",error);
+        console.error("Error fetching city weather data:", error);
         setCityWeather([]); // Set empty array on error
+        setChartData({ xAxis: [], series: [] }); // Reset chart data
       }
     };
 
@@ -45,11 +67,10 @@ const Dashboard = () => {
   };
 
   const renderWeatherData = () => {
-
     if (!cityWeather) {
       return <div>Loading weather data...</div>; // Loading state
     }
-    
+
     switch (selectedTab) {
       case "Today":
       case "Tomorrow":
@@ -75,6 +96,7 @@ const Dashboard = () => {
           <div className="max-w-full flex flex-row min-h-screen m-auto">
             <div className="flex flex-col w-full">
               <Header />
+
               <div className="w-full flex flex-wrap px-4 ">
                 <div className="w-full lg:flex-1 lg:max-w-[1100px]">
                   <div className="flex space-x-8 mx-2 my-6 ">
@@ -107,8 +129,36 @@ const Dashboard = () => {
                       Next 3 days
                     </span>
                   </div>
+
                   {renderWeatherData()}
+                  <div className="mt-5">
+                    <div className="flex flex-wrap">
+                      <div className="w-full lg:flex-1 lg:max-w-[1100px] px-2 mb-6 lg:mb-0">
+                        <div className="relative overflow-x-auto bg-[#1b1b1d] p-5 rounded-md">
+                          <span className="text-white">Temperatures Graph</span>
+
+                          {/* Render the chart only if chart data is available */}
+                          {chartData.xAxis.length > 0 &&
+                          chartData.series.length > 0 ? (
+                            <LineChart
+                              xAxis={[{ data: chartData.xAxis }]} // Days of the week
+                              series={[
+                                {
+                                  data: chartData.series, // Temperatures
+                                },
+                              ]}
+                              width={900}
+                              height={300}
+                            />
+                          ) : (
+                            <p>No data available for the selected city.</p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
                 <OtherCities />
               </div>
             </div>

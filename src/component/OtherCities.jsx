@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import CityCard from "./widgets/CityCard";
 import useOtherCitiesStore from "../store/useOtherCitiesStore";
 import { fetchCityWeatherData } from "../api/cityWeatherData";
+import useSelectedCityStore from "../store/useSelectedCityStore";
 
 const OtherCities = () => {
   const { cities } = useOtherCitiesStore();
   const [cityWeather, setCityWeather] = useState([]);
+
 
   useEffect(() => {
     const fetchCityData = async () => {
@@ -37,10 +39,11 @@ const OtherCities = () => {
         {cityWeather.map((city, index) => (
           <CityCard
             key={index}
-            name={city.city}
+            name={city.city.toLowerCase()}
             icon={city.today.icon}
-            temperature={city.today.current}
+            temperature={city.today.temp}
             weather={city.today.condition}
+     
           />
         ))}
       </div>

@@ -21,7 +21,7 @@ const TodayWeather = ({ data, className }) => {
           <div className="py-4 px-5">
             <div className="flex flex-row items-center justify-between">
               <span className="text-black font-semibold font-aldrich text-5xl lg:text-6xl pt-2">
-                {data.current}°
+                {data.temp}°
               </span>
               <div className="items-center justify-center flex flex-col  text-center lg:mr-5">
                 <img
