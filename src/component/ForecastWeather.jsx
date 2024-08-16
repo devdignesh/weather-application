@@ -24,9 +24,9 @@ const ForecastWeather = ({ data }) => {
               <img
                 src={`/images/icons/${info.icon}.png`}
                 alt=""
-                className="w-18 h-16 "
+                className="w-18 h-16 mt-5 "
               />
-              <span className="text-white font-semibold font-aldrich text-[42px] pt-2">
+              <span className="text-white font-semibold font-aldrich text-4xl lg:text-[42px] pt-2">
                 {info.temp}°
               </span>
             </div>

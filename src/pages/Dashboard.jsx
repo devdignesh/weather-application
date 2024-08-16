@@ -45,7 +45,6 @@ const Dashboard = () => {
             xAxis: days,
             series: temps,
           });
-          
         } else {
           setCityWeather([]); // If no data, set an empty array
           setChartData({ xAxis: [], series: [] }); // Reset chart data
@@ -133,26 +132,21 @@ const Dashboard = () => {
                   {renderWeatherData()}
                   <div className="mt-5">
                     <div className="flex flex-wrap">
-                      <div className="w-full lg:flex-1 lg:max-w-[1100px] px-2 mb-6 lg:mb-0">
-                        <div className="relative overflow-x-auto bg-[#1b1b1d] p-5 rounded-md">
+                      <div className="w-full lg:flex-1 lg:max-w-[1100px]  px-2 mb-6 lg:mb-0 ">
+                        <div className="relative bg-[#1b1b1d] p-5 rounded-md overflow-x-scroll">
                           <span className="text-white">Temperatures Graph</span>
-
-                          {/* Render the chart only if chart data is available */}
-                          {chartData.xAxis.length > 0 &&
-                          chartData.series.length > 0 ? (
+ 
                             <LineChart
-                              xAxis={[{ data: chartData.xAxis }]} // Days of the week
+                              xAxis={[{ data: [1,2,3,4,5] }]} // Days of the week
                               series={[
                                 {
                                   data: chartData.series, // Temperatures
                                 },
                               ]}
-                              width={900}
+                              width={800}
                               height={300}
                             />
-                          ) : (
-                            <p>No data available for the selected city.</p>
-                          )}
+                           
                         </div>
                       </div>
                     </div>

@@ -11,7 +11,7 @@ const NavIcon = ({ icon: Icon, active, className }) => {
       onClick={handleClick}
       href=""
       className={classNames(
-        "bg-[#1e1e1e] rounded-full w-12 h-12 hover:bg-zinc-700/50 duration-200 relative",
+        "bg-[#1e1e1e] rounded-full w-10 h-10 lg:w-12 lg:h-12 hover:bg-zinc-700/50 duration-200 relative",
         className
       )}
     >

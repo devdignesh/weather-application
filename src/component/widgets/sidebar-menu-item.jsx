@@ -13,7 +13,7 @@ const SidebarMenuItem = ({ active, icon: Icon, title }) => {
            )}
           
           <div className="flex flex-row justify-center items-center px-4">
-            <span className={`text-white sm:ml-1 xl:ml-0 ${active ? 'sm:text-black xl:text-black' :''}`}>
+            <span className={` sm:ml-1 xl:ml-0 ${active ? 'text-black sm:text-white lg:text-white xl:text-black' :'text-white'}`}>
               <Icon size={20} />
             </span>
             <span className={`ms-3  ${active ? 'text-black' :'text-white'} capitalize  sm:hidden md:hidden xl:block`}>
